@@ -1,0 +1,167 @@
+/* Personal website: one page, light and dark themes (the system's by default, or the one chosen with the button) */
+
+:root {
+  --bg: #f7f8f6;
+  --surface: #ffffff;
+  --text: #1d2420;
+  --muted: #5b665f;
+  --border: #dde3de;
+  --accent: #2f7d4f;
+  --accent-soft: #e4f1e8;
+  --shadow: 0 1px 3px rgba(20, 30, 25, 0.08);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #151a17;
+    --surface: #1d2420;
+    --text: #e6ebe7;
+    --muted: #9faba3;
+    --border: #2e3832;
+    --accent: #6cc28f;
+    --accent-soft: #233229;
+    --shadow: none;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #151a17;
+  --surface: #1d2420;
+  --text: #e6ebe7;
+  --muted: #9faba3;
+  --border: #2e3832;
+  --accent: #6cc28f;
+  --accent-soft: #233229;
+  --shadow: none;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+
+/* --- top bar --- */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+.topbar .wrap { display: flex; align-items: center; gap: 1rem; min-height: 3.5rem; }
+.brand { font-weight: 600; color: var(--text); white-space: nowrap; }
+.menu { display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; margin-left: auto; font-size: 0.95rem; }
+.menu a { color: var(--muted); }
+.menu a:hover { color: var(--accent); text-decoration: none; }
+.theme-button {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  border-radius: 6px;
+  padding: 0.2rem 0.55rem;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.85rem;
+}
+
+/* --- sections --- */
+section { padding: 3rem 0 1rem; }
+h1 { font-size: 2.3rem; line-height: 1.2; margin: 0 0 0.4rem; }
+h2 { font-size: 1.45rem; margin: 0 0 1.2rem; padding-bottom: 0.4rem; border-bottom: 2px solid var(--accent-soft); }
+h3 { font-size: 1.05rem; margin: 0 0 0.3rem; }
+p { margin: 0 0 1rem; }
+
+.intro { padding-top: 4rem; }
+.tagline { font-size: 1.2rem; color: var(--muted); margin-bottom: 1.4rem; }
+.links { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.links a {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: 999px;
+  padding: 0.3rem 0.9rem;
+  font-size: 0.92rem;
+}
+.links a:hover { border-color: var(--accent); text-decoration: none; }
+
+.about p { text-align: justify; }
+
+/* --- cards (research themes, software) --- */
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
+.cards.pairs { grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); }
+@media (max-width: 420px) { .cards.pairs { grid-template-columns: 1fr; } }
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.1rem 1.2rem;
+  box-shadow: var(--shadow);
+}
+.card p { color: var(--muted); font-size: 0.95rem; margin-bottom: 0.6rem; }
+.card .more { font-size: 0.9rem; }
+.earlier { color: var(--muted); font-size: 0.95rem; margin-top: 1rem; }
+
+/* --- publications --- */
+.filters { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.2rem; }
+.filters button {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 0.25rem 0.8rem;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.88rem;
+}
+.filters button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--surface); }
+.year { font-weight: 600; color: var(--muted); margin: 1.2rem 0 0.4rem; }
+.pubs { list-style: none; margin: 0; padding: 0; }
+.pubs li { padding: 0.55rem 0; border-bottom: 1px solid var(--border); }
+.pubs .title { font-weight: 600; }
+.pubs .authors, .pubs .venue { font-size: 0.92rem; color: var(--muted); }
+.pubs .venue em { font-style: italic; }
+.pubs .me { color: var(--text); font-weight: 600; }
+.tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  background: var(--accent-soft);
+  color: var(--text);
+  border-radius: 4px;
+  padding: 0 0.4rem;
+  margin-right: 0.3rem;
+}
+
+/* --- experience and education --- */
+.timeline { list-style: none; margin: 0 0 1.5rem; padding: 0; border-left: 2px solid var(--accent-soft); }
+.timeline li { position: relative; padding: 0 0 1.2rem 1.2rem; }
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: 0.45rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.when { font-size: 0.88rem; color: var(--muted); }
+.timeline p { font-size: 0.95rem; color: var(--muted); margin: 0.2rem 0 0; }
+
+footer { color: var(--muted); font-size: 0.85rem; padding: 2rem 0 3rem; border-top: 1px solid var(--border); margin-top: 2rem; }
+
+@media (max-width: 640px) {
+  .topbar .wrap { flex-wrap: wrap; padding-top: 0.5rem; padding-bottom: 0.5rem; }
+  .menu { margin-left: 0; width: 100%; order: 3; }
+  h1 { font-size: 1.8rem; }
+  .about p { text-align: left; }
+}

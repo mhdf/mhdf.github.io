@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marston H. D. Franceschini</title>
+  <meta name="description" content="Marston H. D. Franceschini: remote and proximal sensing for crop monitoring, UAV-based remote sensing and plant disease detection.">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top">Marston H. D. Franceschini</a>
+    <nav class="menu" aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#software">Software</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-button" id="theme-button" type="button">Dark theme</button>
+  </div>
+</header>
+
+<main class="wrap" id="top">
+
+  <section class="intro">
+    <h1>Marston H. D. Franceschini</h1>
+    <p class="tagline">Remote and proximal sensing for crop monitoring · Brazil</p>
+    <div class="links">
+      <a href="https://orcid.org/0000-0002-1295-4798">ORCID</a>
+      <a href="https://www.researchgate.net/profile/Marston-Franceschini">ResearchGate</a>
+      <a href="https://www.linkedin.com/in/marston-h-d-franceschini/">LinkedIn</a>
+      <a href="https://github.com/mhdf">GitHub</a>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About</h2>
+    <p>I work on proximal and remote sensing for monitoring crops and the stresses that affect them, especially plant
+      diseases. I acquire, process and analyse multispectral and hyperspectral imagery from UAVs, as well as field and
+      laboratory spectral data, to characterise plant traits and detect diseases early. My current research combines
+      optical sensing and artificial intelligence for high-throughput plant phenotyping and digital plant pathology.</p>
+    <p>I am an agronomic engineer, with an MSc in soil and plant nutrition and a PhD in geo-information science and
+      remote sensing from Wageningen University &amp; Research. I develop open and reproducible workflows for sensing
+      data in Python and R, aimed at practical use in agriculture. I work in Portuguese, English and French.</p>
+  </section>
+
+  <section id="research">
+    <h2>Research themes</h2>
+    <div class="cards">
+      <article class="card">
+        <h3>Plant disease detection</h3>
+        <p>Early detection and severity assessment of plant diseases from spectral data and UAV imagery: late blight
+          and blackleg in potato, Ceratocystis wilt in eucalyptus.</p>
+        <a class="more" href="#publications" data-show-theme="disease">Publications on this theme</a>
+      </article>
+      <article class="card">
+        <h3>UAV-based remote sensing</h3>
+        <p>Acquisition and preprocessing of multispectral and hyperspectral UAV imagery, from radiometric correction to
+          plant traits, including the structure of the canopy from LiDAR and photogrammetry.</p>
+        <a class="more" href="#publications" data-show-theme="uav">Publications on this theme</a>
+      </article>
+      <article class="card">
+        <h3>Crop monitoring</h3>
+        <p>Retrieval of crop and grassland traits, such as biomass and nitrogen content, from UAV and Sentinel-2
+          data, including how to transfer calibrated models to new conditions with few new samples.</p>
+        <a class="more" href="#publications" data-show-theme="crop">Publications on this theme</a>
+      </article>
+    </div>
+    <p class="earlier">Earlier work: soil spectroscopy, from laboratory and on-the-go measurements to imaging
+      spectroscopy and satellite images, for soil texture, properties and salinity
+      (<a href="#publications" data-show-theme="soil">publications</a>).</p>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+    <div class="filters" role="group" aria-label="Filter the publications by theme">
+      <button type="button" data-filter="all" aria-pressed="true">All</button>
+      <button type="button" data-filter="disease" aria-pressed="false">Disease detection</button>
+      <button type="button" data-filter="uav" aria-pressed="false">UAV remote sensing</button>
+      <button type="button" data-filter="crop" aria-pressed="false">Crop monitoring</button>
+      <button type="button" data-filter="soil" aria-pressed="false">Soil spectroscopy</button>
+    </div>
+    <div class="year-group">
+      <div class="year">2025</div>
+      <ul class="pubs">
+      <li data-themes="disease">
+        <div class="title">Leaf Diffuse Reflectance Spectroscopy for Early Detection of Ceratocystis Wilt in Eucalyptus Cuttings</div>
+        <div class="authors">Santiago, M.I.L., <span class="me">Franceschini, M.H.D.</span>, Del Ponte, E.M., do Amaral, C.H., Alfenas, R.F.</div>
+        <div class="venue"><em>Forest Pathology</em>, 55(6), e70052. <a href="https://doi.org/10.1111/efp.70052">doi:10.1111/efp.70052</a></div>
+        <div><span class="tag">Disease detection</span></div>
+      </li>
+      </ul>
+    </div>
+    <div class="year-group">
+      <div class="year">2024</div>
+      <ul class="pubs">
+      <li data-themes="disease uav">
+        <div class="title">Detection of a vascular wilt disease in potato (‘Blackleg’) based on UAV hyperspectral imagery: Can structural features from LiDAR or SfM improve plant-wise classification accuracy?</div>
+        <div class="authors"><span class="me">Franceschini, M.H.D.</span>, Brede, B., Kamp, J., Bartholomeus, H., Kooistra, L.</div>
+        <div class="venue"><em>Computers and Electronics in Agriculture</em>, 227, 109527. <a href="https://doi.org/10.1016/j.compag.2024.109527">doi:10.1016/j.compag.2024.109527</a></div>
+        <div><span class="tag">Disease detection</span><span class="tag">UAV</span></div>
+      </li>
+      <li data-themes="disease">
+        <div class="title">Are fungicides effective in protecting pruning wounds against Ceratocystis wilt on kiwifruit vines?</div>
+        <div class="authors">Cassol, S.A., Santos, S.A., <span class="me">Franceschini, M.H.D.</span>, Alexandre, F.S., Macedo, D.M., Pal, C., Del Ponte, E.M., Alfenas, A.C., Alfenas, R.F.</div>
+        <div class="venue"><em>Tropical Plant Pathology</em>, 49(3), 459-465. <a href="https://doi.org/10.1007/s40858-023-00633-1">doi:10.1007/s40858-023-00633-1</a></div>
+        <div><span class="tag">Disease detection</span></div>
+      </li>
+      </ul>
+    </div>
+    <div class="year-group">
+      <div class="year">2022</div>
+      <ul class="pubs">
+      <li data-themes="uav crop">
+        <div class="title">Quantification of Grassland Biomass and Nitrogen Content through UAV Hyperspectral Imagery—Active Sample Selection for Model Transfer</div>
+        <div class="authors"><span class="me">Franceschini, M.H.D.</span>, Becker, R., Wichern, F., Kooistra, L.</div>
+        <div class="venue"><em>Drones</em>, 6(3), 73. <a href="https://doi.org/10.3390/drones6030073">doi:10.3390/drones6030073</a></div>
+        <div><span class="tag">UAV</span><span class="tag">Crop monitoring</span></div>
+      </li>
+      </ul>
+    </div>
+    <div class="year-group">
+      <div class="year">2021</div>
+      <ul class="pubs">
+      <li data-themes="crop">
+        <div class="title">Sen2Grass: A Cloud-Based Solution to Generate Field-Specific Grassland Information Derived from Sentinel-2 Imagery</div>
+        <div class="authors">Hardy, T., Kooistra, L., <span class="me">Franceschini, M.H.D.</span>, Richter, S., Vonk, E., van den Eertwegh, G., van Deijl, D.</div>
+        <div class="venue"><em>AgriEngineering</em>, 3(1), 118-137. <a href="https://doi.org/10.3390/agriengineering3010008">doi:10.3390/agriengineering3010008</a></div>
+        <div><span class="tag">Crop monitoring</span></div>
+      </li>
+      <li data-themes="disease uav crop">
+        <div class="title">Crop traits retrieval and disease detection in potato: UAV optical sensing for plant monitoring</div>
+        <div class="authors"><span class="me">Franceschini, M.H.D.</span></div>
+        <div class="venue">PhD thesis. <em>Wageningen University</em>. <a href="https://doi.org/10.18174/543088">doi:10.18174/543088</a></div>
+        <div><span class="tag">Disease detection</span><span class="tag">UAV</span><span class="tag">Crop monitoring</span></div>
+      </li>
+      </ul>
+    </div>
+    <div class="year-group">
+      <div class="year">2020</div>
+      <ul class="pubs">
+      <li data-themes="crop">
+        <div class="title">Automated Processing of Sentinel-2 Products for Time-Series Analysis in Grassland Monitoring</div>
+        <div class="authors">Hardy, T., <span class="me">Franceschini, M.H.D.</span>, Kooistra, L., Novani, M., Richter, S.</div>
+        <div class="venue">Book chapter. <em>IFIP Advances in Information and Communication Technology</em>, 48-56. <a href="https://doi.org/10.1007/978-3-030-39815-6_5">doi:10.1007/978-3-030-39815-6_5</a></div>
+        <div><span class="tag">Crop monitoring</span></div>
+      </li>
+      </ul>
+    </div>
+    <div class="year-group">
+      <div class="year">2019</div>
+      <ul class="pubs">
+      <li data-themes="disease uav crop">
+        <div class="title">Object-Based Image Analysis Applied to Low Altitude Aerial Imagery for Potato Plant Trait Retrieval and Pathogen Detection</div>
+        <div class="authors">Siebring, J., Valente, J., <span class="me">Franceschini, M.H.D.</span>, Kamp, J., Kooistra, L.</div>
+        <div class="venue"><em>Sensors</em>, 19(24), 5477. <a href="https://doi.org/10.3390/s19245477">doi:10.3390/s19245477</a></div>
+        <div><span class="tag">Disease detection</span><span class="tag">UAV</span><span class="tag">Crop monitoring</span></div>
+      </li>
+      <li data-themes="uav soil">
+        <div class="title">UAV based soil salinity assessment of cropland</div>
+        <div class="authors">Ivushkin, K., Bartholomeus, H., Bregt, A.K., Pulatov, A., <span class="me">Franceschini, M.H.D.</span>, Kramer, H., van Loo, E.N., Jaramillo Roman, V., Finkers, R.</div>
+        <div class="venue"><em>Geoderma</em>, 338, 502-512. <a href="https://doi.org/10.1016/j.geoderma.2018.09.046">doi:10.1016/j.geoderma.2018.09.046</a></div>
+        <div><span class="tag">UAV</span><span class="tag">Soil spectroscopy</span></div>
+      </li>
+      <li data-themes="disease uav">
+        <div class="title">Feasibility of Unmanned Aerial Vehicle Optical Imagery for Early Detection and Severity Assessment of Late Blight in Potato</div>
+        <div class="authors"><span class="me">Franceschini, M.H.D.</span>, Bartholomeus, H., van Apeldoorn, D.F., Suomalainen, J., Kooistra, L.</div>
+        <div class="venue"><em>Remote Sensing</em>, 11(3), 224. <a href="https://doi.org/10.3390/rs11030224">doi:10.3390/rs11030224</a></div>
+        <div><span class="tag">Disease detection</span><span class="tag">UAV</span></div>
+      </li>
+      <li data-themes="soil">
+        <div class="title">Robust soil mapping at the farm scale with vis–NIR spectroscopy</div>
+        <div class="authors">Ramirez‐Lopez, L., Wadoux, A.M.J.‐., <span class="me">Franceschini, M.H.D.</span>, Terra, F.S., Marques, K.P.P., Sayão, V.M., Demattê, J.A.M.</div>
+        <div class="venue"><em>European Journal of Soil Science</em>, 70(2), 378-393. <a href="https://doi.org/10.1111/ejss.12752">doi:10.1111/ejss.12752</a></div>
+        <div><span class="tag">Soil spectroscopy</span></div>
+      </li>
+      </ul>
+    </div>
+    <div class="year-group">
+      <div class="year">2018</div>
+      <ul class="pubs">
+      <li data-themes="soil">
+        <div class="title">Improvement of Clay and Sand Quantification Based on a Novel Approach with a Focus on Multispectral Satellite Images</div>
+        <div class="authors">Fongaro, C.T., Demattê, J.A.M., Rizzo, R., Lucas Safanelli, J., Mendes, W.d.S., Dotto, A.C., Vicente, L.E., <span class="me">Franceschini, M.H.D.</span>, Ustin, S.L.</div>
+        <div class="venue"><em>Remote Sensing</em>, 10(10), 1555. <a href="https://doi.org/10.3390/rs10101555">doi:10.3390/rs10101555</a></div>
+        <div><span class="tag">Soil spectroscopy</span></div>
+      </li>
+      <li data-themes="soil">
+        <div class="title">Effects of external factors on soil reflectance measured on-the-go and assessment of potential spectral correction through orthogonalisation and standardisation procedures</div>
+        <div class="authors"><span class="me">Franceschini, M.H.D.</span>, Demattê, J.A.M., Kooistra, L., Bartholomeus, H., Rizzo, R., Fongaro, C.T., Molin, J.P.</div>
+        <div class="venue"><em>Soil and Tillage Research</em>, 177, 19-36. <a href="https://doi.org/10.1016/j.still.2017.10.004">doi:10.1016/j.still.2017.10.004</a></div>
+        <div><span class="tag">Soil spectroscopy</span></div>
+      </li>
+      </ul>
+    </div>
+    <div class="year-group">
+      <div class="year">2017</div>
+      <ul class="pubs">
+      <li data-themes="disease uav">
+        <div class="title">Assessing changes in potato canopy caused by late blight in organic production systems through UAV-based pushbroom imaging spectrometer</div>
+        <div class="authors"><span class="me">Franceschini, M.H.D.</span>, Bartholomeus, H., van Apeldoorn, D., Suomalainen, J., Kooistra, L.</div>
+        <div class="venue">Conference paper. <em>International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences</em>, XLII-2/W6, 109-112. <a href="https://doi.org/10.5194/isprs-archives-XLII-2-W6-109-2017">doi:10.5194/isprs-archives-XLII-2-W6-109-2017</a></div>
+        <div><span class="tag">Disease detection</span><span class="tag">UAV</span></div>
+      </li>
+      <li data-themes="uav crop">
+        <div class="title">Intercomparison of Unmanned Aerial Vehicle and Ground-Based Narrow Band Spectrometers Applied to Crop Trait Monitoring in Organic Potato Production</div>
+        <div class="authors"><span class="me">Franceschini, M.H.D.</span>, Bartholomeus, H., Van Apeldoorn, D., Suomalainen, J., Kooistra, L.</div>
+        <div class="venue"><em>Sensors</em>, 17(6), 1428. <a href="https://doi.org/10.3390/s17061428">doi:10.3390/s17061428</a></div>
+        <div><span class="tag">UAV</span><span class="tag">Crop monitoring</span></div>
+      </li>
+      </ul>
+    </div>
+    <div class="year-group">
+      <div class="year">2015</div>
+      <ul class="pubs">
+      <li data-themes="soil">
+        <div class="title">Prediction of soil properties using imaging spectroscopy: Considering fractional vegetation cover to improve accuracy</div>
+        <div class="authors"><span class="me">Franceschini, M.H.D.</span>, Demattê, J.A.M., da Silva Terra, F., Vicente, L.E., Bartholomeus, H., de Souza Filho, C.R.</div>
+        <div class="venue"><em>International Journal of Applied Earth Observation and Geoinformation</em>, 38, 358-370. <a href="https://doi.org/10.1016/j.jag.2015.01.019">doi:10.1016/j.jag.2015.01.019</a></div>
+        <div><span class="tag">Soil spectroscopy</span></div>
+      </li>
+      <li data-themes="soil">
+        <div class="title">Spectral sensing from ground to space in soil science: state of the art, applications, potential, and perspectives</div>
+        
+        <div class="venue">Book chapter. <em>Land Resources Monitoring, Modeling, and Mapping with Remote Sensing (CRC Press)</em>. <a href="https://doi.org/10.1201/b19322">doi:10.1201/b19322</a></div>
+        <div><span class="tag">Soil spectroscopy</span></div>
+      </li>
+      </ul>
+    </div>
+    <div class="year-group">
+      <div class="year">2013</div>
+      <ul class="pubs">
+      <li data-themes="soil">
+        <div class="title">Abordagens semiquantitativa e quantitativa na avaliação da textura do solo por espectroscopia de reflectância bidirecional no VIS-NIR-SWIR</div>
+        <div class="authors"><span class="me">Franceschini, M.H.D.</span>, Demattê, J.A.M., Sato, M.V., Vicente, L.E., Grego, C.R.</div>
+        <div class="venue"><em>Pesquisa Agropecuária Brasileira</em>, 48(12), 1569-1582. <a href="https://doi.org/10.1590/S0100-204X2013001200006">doi:10.1590/S0100-204X2013001200006</a></div>
+        <div><span class="tag">Soil spectroscopy</span></div>
+      </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="software">
+    <h2>Software</h2>
+    <div class="cards pairs">
+      <article class="card">
+        <h3>MicaSense radiometric correction</h3>
+        <p>Radiometric correction of MicaSense multispectral images, from raw values to radiance or reflectance, with
+          the reference panel and optional DLS correction. User interface, command line and Python library.</p>
+        <a class="more" href="https://mhdf.github.io/micasense_radiometric_correction/">Documentation</a> ·
+        <a class="more" href="https://github.com/mhdf/micasense_radiometric_correction">Code</a>
+      </article>
+      <article class="card">
+        <h3>Field design extraction</h3>
+        <p>Reads field trial maps and disease rating sheets from Excel workbooks, as they are drawn in the field, and
+          turns them into tidy tables, with data checks and figures.</p>
+        <a class="more" href="https://github.com/mhdf/field_design_extraction">Code</a>
+      </article>
+      <article class="card">
+        <h3>Ceratocystis wilt detection</h3>
+        <p>Data analysis of the study on leaf diffuse reflectance spectroscopy for the early detection of Ceratocystis
+          wilt in eucalyptus cuttings.</p>
+        <a class="more" href="https://github.com/mhdf/disease_detection_ceratocystis_spectroscopy">Code</a>
+      </article>
+      <article class="card">
+        <h3>Uncertainty-based model transfer</h3>
+        <p>Analysis of the study on grassland biomass and nitrogen content from UAV hyperspectral imagery, with active
+          sample selection for model transfer.</p>
+        <a class="more" href="https://github.com/mhdf/uncertainty-based_model_transfer">Code</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul class="timeline">
+      <li>
+        <h3>Postdoctoral Researcher · Universidade Federal de Viçosa</h3>
+        <div class="when">2022 – 2023 · Viçosa, Brazil</div>
+        <p>Leaf diffuse reflectance for the early detection of Ceratocystis wilt in eucalyptus cuttings: spectral data
+          preprocessing, multivariate and machine learning analysis, and an initial leaf image dataset for automated
+          disease detection.</p>
+      </li>
+      <li>
+        <h3>Research Assistant · Rhine-Waal University</h3>
+        <div class="when">2018 – 2020 · Kleve, Germany</div>
+        <p>Grassland biomass and nitrogen content from UAV hyperspectral imagery, Sentinel-2 and weather data, with
+          uncertainty-based sample selection for model calibration and a grassland growth model in Python.</p>
+      </li>
+      <li>
+        <h3>Internship · Agronomic Service, Tereos group</h3>
+        <div class="when">2008 – 2009 · Origny-Sainte-Benoite, France</div>
+        <p>Field experiments on sugar beet storage, climatic data and statistical analysis of cultivars and storage
+          conditions.</p>
+      </li>
+    </ul>
+    <h2>Education</h2>
+    <ul class="timeline">
+      <li>
+        <h3>PhD, Geo-Information Science and Remote Sensing · Wageningen University &amp; Research</h3>
+        <div class="when">2014 – 2021 · Thesis: Crop traits retrieval and disease detection in potato: UAV optical
+          sensing for plant monitoring</div>
+      </li>
+      <li>
+        <h3>MSc, Soil and Plant Nutrition · Escola Superior de Agricultura "Luiz de Queiroz" (ESALQ/USP)</h3>
+        <div class="when">2011 – 2013</div>
+      </li>
+      <li>
+        <h3>Master's degree, Engineering in Agriculture · École d'Ingénieurs de PURPAN</h3>
+        <div class="when">2007 – 2009 · Toulouse, France</div>
+      </li>
+      <li>
+        <h3>Agronomic Engineering · Escola Superior de Agricultura "Luiz de Queiroz" (ESALQ/USP)</h3>
+        <div class="when">2004 – 2010</div>
+      </li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>The profiles below are the best way to reach me.</p>
+    <div class="links">
+      <a href="https://orcid.org/0000-0002-1295-4798">ORCID</a>
+      <a href="https://www.researchgate.net/profile/Marston-Franceschini">ResearchGate</a>
+      <a href="https://www.linkedin.com/in/marston-h-d-franceschini/">LinkedIn</a>
+      <a href="https://github.com/mhdf">GitHub</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">Last updated: November 2026.</div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
