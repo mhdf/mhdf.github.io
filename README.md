@@ -8,3 +8,5 @@ Source of the personal website of Marston H. D. Franceschini, published by GitHu
 
 The site is plain HTML: nothing to build. To add a publication, copy one `<li>` of the list in `index.html` and change
 it; its `data-themes` (disease, uav, crop, soil) decide the filters it appears in.
+
+The site was written with the help of an AI coding assistant (Claude, by Anthropic). The author directed the work, checked the content and is responsible for it.
